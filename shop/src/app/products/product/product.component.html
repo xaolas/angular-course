@@ -1,0 +1,20 @@
+<div>
+  <h3>{{product.name}}</h3>
+  <ul>
+    <li>Description: {{product.description}}</li>
+    <li>Price: {{product.price}}</li>
+    <li>Category: {{product.category}}</li>
+    <li>Is Available: {{product.isAvailable}}</li>
+    <li>Ingredients:
+      <ul>
+        <li *ngFor="let ingredient of product.ingredients">{{ingredient}}</li>
+      </ul>
+    </li>
+    <li>Equivalents:
+      <ul>
+        <li *ngFor="let equivalent of product.equivalents">{{equivalent}}</li>
+      </ul>
+    </li>
+  </ul>
+  <button (click)="onBuy()">Buy</button>
+</div>
