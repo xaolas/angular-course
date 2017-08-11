@@ -1,4 +1,4 @@
-import { Categories } from '../../categories.enum';
+import { Categories } from './categories.enum';
 
 
 export class Product {
